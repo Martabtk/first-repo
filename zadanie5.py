@@ -3,11 +3,12 @@ mode = 'r'
 with open(path, mode) as plik:
     content = plik.readlines()
 #    print(content)
+#wyrzucenie pierwszego wiersza i 2 kolumny
 for i in range (len(content)):
     content[i] = content[i].split(',')
 print(content)
 print(content[0][1])
-
+#wylicz srednia wyplaty
 total = 0
 for i in range (1, len(content)):
     total += int(content[i][1])
